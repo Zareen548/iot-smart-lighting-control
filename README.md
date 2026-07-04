@@ -53,7 +53,48 @@ The system uses a remote control unit with a potentiometer to read the preferred
 ## MQTT Interface
 
 ![MQTT Interface](images/mqtt_interface.png)
+----
+## Pseudocode
 
+```text
+START
+
+Initialize ESP8266
+Initialize Wi-Fi connection
+Initialize MQTT client
+Set MQTT broker address
+Set MQTT topic for light intensity
+
+Connect ESP8266 to Wi-Fi
+
+IF Wi-Fi is connected
+    Connect to MQTT broker
+ELSE
+    Keep trying to connect to Wi-Fi
+END IF
+
+LOOP forever
+
+    Read potentiometer analog value
+
+    Convert analog value into brightness percentage
+    Example: 0–1023 converted to 0–100%
+
+    Publish brightness percentage to MQTT topic
+
+    MQTT broker receives the brightness value
+
+    Lighting controller reads the MQTT message
+
+    Adjust LIFX smart bulb brightness according to received value
+
+    Wait for a short delay
+
+END LOOP
+
+END
+```
+-----
 ## Working Principle
 
 1. The user adjusts the potentiometer.
