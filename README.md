@@ -20,7 +20,7 @@ The system uses a remote control unit with a potentiometer to read the preferred
 
 ## System Architecture
 
-![System Architecture](images/architecture.png)
+![System Architecture](images/Architecture.png)
 
 ## Hardware Components
 
@@ -42,7 +42,7 @@ The system uses a remote control unit with a potentiometer to read the preferred
 
 ## Hardware Setup
 
-![Hardware Setup](images/hardware_setup.png)
+![Hardware Setup](images/Hardware_setup.png)
 
 ## Prototype
 
