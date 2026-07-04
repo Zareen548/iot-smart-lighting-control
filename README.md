@@ -69,12 +69,6 @@ The system uses a remote control unit with a potentiometer to read the preferred
 - Controlling light intensity based on user preference
 - Building a working hardware prototype
 
-## Project Report
-
-The full project report is available here:
-
-[Project-IoT.pdf](docs/Project-IoT.pdf)
-
 ## References
 
 - LIFX API documentation
